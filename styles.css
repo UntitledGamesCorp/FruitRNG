@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(90deg, var(--color-1) 0%, var(--color-1) 25%, var(--color-2) 25%, var(--color-2) 50%, var(--color-3) 50%, var(--color-3) 75%, var(--color-4) 75%, var(--color-4) 100%);
+  }body, html {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0
+      ;
+  }
+  
+  .container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s;
+      position: relative;
+  }
+  
+  #generateButton, #inventoryButton, #shopButton, #questButton {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+  
+  .output {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .rarity {
+      margin-top: 10px;
+      font-size: 18px;
+      font-style: italic;
+  }
+  
+  .inventory, .shop, .quests {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+  }
+  
+  .coverPage {
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .coins {
+      margin-top: 20px;
+      font-size: 18px;
+  }
+  
+  .countdown {
+      margin-top: 20px;
+      font-size: 18px;
+      color: gray;
+  }
+  
+  .alert {
+      display: none;
+      background-color: #ffcccc;
+      color: #ff0000;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ff0000;
+      border-radius: 5px;
+  }
+  
+  .common {
+      color: gray;
+      background-color: #e0e0e0;
+  }
+  
+  .rare {
+      color: blue;
+      background-color: #add8e6;
+  }
+  
+  .epic {
+      color: purple;
+      background-color: #dda0dd;
+  }
+  
+  .legendary {
+      color: gold;
+      background-color: #fffacd;
+  }
+  
