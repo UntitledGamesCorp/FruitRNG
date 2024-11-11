@@ -336,6 +336,7 @@ function updateOurSocialsDisplay() {
         <input type="button" onclick="window.location.href='https://www.tiktok.com/@fugding.cookie.cl';" value="TikTok" />
         <input type="button" onclick="window.location.href='https://untitledgames-corp.itch.io/';" value="Itch" />
         <input type="button" onclick="window.location.href='https://github.com/UntitledGamesCorp';" value="GitHub" />
+        <input type="button" onclick="window.location.href='https://untitledgamescorp.xyz';" value="Our Website" />
     `;
 }
 
