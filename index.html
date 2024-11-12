@@ -12,6 +12,17 @@
 </head>
 <body>
     <div class="container">
+        <!-- How to Play Modal -->
+        <div id="howToPlayModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="closeModal">&times;</span>
+                <h2>How to Play</h2>
+                <p>Generate fruits, sell them for upgrades, and complete quests!</p>
+                <button id="okButton" class="ok-button">OK</button>
+            </div>
+        </div>
+
+        <!-- Game UI -->
         <div id="alertMessage" class="alert"></div>
         <button id="generateButton">Generate Word</button>
         <div id="countdown" class="countdown"></div>
@@ -29,6 +40,7 @@
         <div class="experience">Experience: <span id="experienceCount">0/100</span></div>
         <div class="level">Level: <span id="levelCount">1</span></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
