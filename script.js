@@ -1,3 +1,4 @@
+
 let inventory = [];
 let coins = 0;
 let luckUpgrade = false;
@@ -221,6 +222,31 @@ document.getElementById('socialsButton').addEventListener('click', () => {
     } else {
         oursocialsDiv.style.display = 'none';
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("howToPlayModal");
+    const closeModalButton = document.getElementById("closeModal");
+    const okButton = document.getElementById("okButton");
+
+    // Show the modal when the page loads
+    modal.style.display = "flex";
+
+    // Close the modal when the close button or OK button is clicked
+    closeModalButton.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    okButton.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // Optionally close the modal by clicking outside the modal content
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });
 
 function getRandomWord() {
